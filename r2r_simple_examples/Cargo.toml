@@ -1,0 +1,20 @@
+[package]
+name = "r2r_simple_examples"
+version = "0.1.0"
+edition = "2021"
+
+[profile.colcon]
+inherits = "release"
+
+[dependencies]
+futures = "0.3.26"
+r2r = "0.9"
+tokio = { version = "1.35.1", features = ["full"] }
+
+[[bin]]
+name = "pub"
+path = "src/pub.rs"
+
+[[bin]]
+name = "sub"
+path = "src/sub.rs"
