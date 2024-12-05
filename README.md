@@ -1,4 +1,4 @@
-# r2r-exampels
+# r2r-examples
 
 The repository includes some simple examples to use r2r.
 
