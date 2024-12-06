@@ -13,3 +13,12 @@ pre-commit install --install-hooks
 ```shell
 cargo build
 ```
+
+* Run examples
+
+```shell
+# Publisher
+ros2 run r2r_simple_examples pub
+# Subscriber
+ros2 run r2r_simple_examples sub
+```
