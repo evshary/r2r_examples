@@ -21,4 +21,8 @@ cargo build
 ros2 run r2r_simple_examples pub
 # Subscriber
 ros2 run r2r_simple_examples sub
+# Service
+ros2 run r2r_simple_examples service
+# Client
+ros2 run r2r_simple_examples client
 ```

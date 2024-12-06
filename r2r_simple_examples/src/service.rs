@@ -7,7 +7,7 @@ async fn main() {
     println!("This is service");
 
     let ctx = r2r::Context::create().unwrap();
-    let mut node = r2r::Node::create(ctx, "ros_sub", "").unwrap();
+    let mut node = r2r::Node::create(ctx, "ros_service", "").unwrap();
     let mut service = node
         .create_service::<r2r::std_srvs::srv::SetBool::Service>(
             "/my_service",
