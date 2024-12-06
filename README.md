@@ -25,4 +25,8 @@ ros2 run r2r_simple_examples sub
 ros2 run r2r_simple_examples service
 # Client
 ros2 run r2r_simple_examples client
+# Action Service
+ros2 run r2r_simple_examples action_server
+# Action Client
+ros2 run r2r_simple_examples action_client
 ```

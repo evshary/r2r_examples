@@ -13,6 +13,7 @@ r2r_cargo(std_msgs
           std_srvs
           rcl
           rcl_action
+          example_interfaces
          )
 
 if(WIN32)
@@ -38,6 +39,16 @@ install(PROGRAMS
 
 install(PROGRAMS
   ${CMAKE_SOURCE_DIR}/target/colcon/client${SUFFIX}
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(PROGRAMS
+  ${CMAKE_SOURCE_DIR}/target/colcon/action_server${SUFFIX}
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(PROGRAMS
+  ${CMAKE_SOURCE_DIR}/target/colcon/action_client${SUFFIX}
   DESTINATION lib/${PROJECT_NAME}
 )
 
