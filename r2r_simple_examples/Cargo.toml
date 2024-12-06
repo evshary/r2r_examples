@@ -18,3 +18,11 @@ path = "src/pub.rs"
 [[bin]]
 name = "sub"
 path = "src/sub.rs"
+
+[[bin]]
+name = "service"
+path = "src/service.rs"
+
+[[bin]]
+name = "client"
+path = "src/client.rs"

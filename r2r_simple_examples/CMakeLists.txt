@@ -10,6 +10,7 @@ endif()
 include(r2r_cargo.cmake)
 
 r2r_cargo(std_msgs
+          std_srvs
           rcl
           rcl_action
          )
@@ -27,6 +28,16 @@ install(PROGRAMS
 
 install(PROGRAMS
   ${CMAKE_SOURCE_DIR}/target/colcon/sub${SUFFIX}
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(PROGRAMS
+  ${CMAKE_SOURCE_DIR}/target/colcon/service${SUFFIX}
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(PROGRAMS
+  ${CMAKE_SOURCE_DIR}/target/colcon/client${SUFFIX}
   DESTINATION lib/${PROJECT_NAME}
 )
 
